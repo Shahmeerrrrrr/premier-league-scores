@@ -996,6 +996,16 @@ a:hover {
   text-decoration: underline;
 }
 
+.footer-arsenal {
+  color: var(--accent-red);
+  font-weight: 700;
+}
+
+.footer-highlight {
+  color: #ffffff;
+  font-weight: 700;
+}
+
 /* ==========================================================================
    Reduced Motion Accessibility
    ========================================================================== */

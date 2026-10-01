@@ -306,7 +306,7 @@ export default function App() {
           >
             OpenLigaDB
           </a>
-          . Live match status is derived from scheduled kickoff times. <br />This is made by an <span className="color-red font-bold">Arsenal</span> fan who is a proud <span className="text-white font-bold">Gooner</span> and always <span className="text-white font-bold">COYG!!!</span>
+          . Live match status is derived from scheduled kickoff times. <br />This is made by an <span className="footer-arsenal">Arsenal</span> fan who is a proud <span className="footer-highlight">Gooner</span> and always <span className="footer-highlight">COYG!</span>
         </p>
       </footer>
     </div>
