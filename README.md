@@ -7,9 +7,6 @@ A full-stack, production-ready English Premier League tracking application engin
 
 ---
 
-## Application Demo
-
-![Premier League Scores Interface Demo](docs/demo.webp)
 
 ---
 
@@ -222,3 +219,8 @@ The repository includes Infrastructure-as-Code definitions:
 ## Author & Attribution
 - **Data Source:** [OpenLigaDB](https://www.openligadb.de) Community API.
 - **Developer:** Shahmeer.
+
+- 
+## Application Demo
+
+![Premier League Scores Interface Demo](docs/demo.webp)
