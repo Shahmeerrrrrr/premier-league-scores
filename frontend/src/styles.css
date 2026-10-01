@@ -195,7 +195,35 @@ a:hover {
   color: var(--text-muted);
 }
 
-/* Navigation Tabs (Pill style with Layered Surfaces) */
+/* Navigation Tabs & Header Actions (Pill style with Layered Surfaces) */
+.header-actions {
+  display: flex;
+  align-items: center;
+  gap: 0.65rem;
+}
+
+.nav-icon-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 38px;
+  height: 38px;
+  background: var(--bg-card);
+  border: 1px solid var(--border-surface);
+  box-shadow: var(--shadow-pill);
+  border-radius: var(--radius-sm);
+  color: var(--text-secondary);
+  cursor: pointer;
+  transition: all 180ms ease;
+}
+
+.nav-icon-badge:hover {
+  color: #ffffff;
+  border-color: rgba(239, 1, 7, 0.4);
+  transform: translateY(-2px) rotate(15deg);
+  box-shadow: 0 4px 12px rgba(239, 1, 7, 0.25), var(--shadow-pill);
+}
+
 .view-nav {
   display: flex;
   background: var(--bg-card);

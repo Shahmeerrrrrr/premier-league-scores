@@ -7,6 +7,8 @@ import {
 import MatchdayNav from './components/MatchdayNav';
 import MatchCard from './components/MatchCard';
 import StandingsTable from './components/StandingsTable';
+import { HugeiconsIcon } from '@hugeicons/react';
+import { ThreeDRotateIcon } from '@hugeicons/core-free-icons';
 
 export default function App() {
   const [currentView, setCurrentView] = useState('matches'); // 'matches' | 'table'
@@ -153,23 +155,34 @@ export default function App() {
             </div>
           </div>
 
-          {/* View Switcher Tabs */}
-          <nav className="view-nav" aria-label="Views">
-            <button
-              type="button"
-              className={`nav-tab ${currentView === 'matches' ? 'active' : ''}`}
-              onClick={() => setCurrentView('matches')}
-            >
-              Fixtures & Scores
-            </button>
-            <button
-              type="button"
-              className={`nav-tab ${currentView === 'table' ? 'active' : ''}`}
-              onClick={() => setCurrentView('table')}
-            >
-              Standings
-            </button>
-          </nav>
+          {/* View Switcher Tabs & Actions */}
+          <div className="header-actions">
+            <nav className="view-nav" aria-label="Views">
+              <button
+                type="button"
+                className={`nav-tab ${currentView === 'matches' ? 'active' : ''}`}
+                onClick={() => setCurrentView('matches')}
+              >
+                Fixtures & Scores
+              </button>
+              <button
+                type="button"
+                className={`nav-tab ${currentView === 'table' ? 'active' : ''}`}
+                onClick={() => setCurrentView('table')}
+              >
+                Standings
+              </button>
+            </nav>
+
+            <div className="nav-icon-badge" title="3D Motion Active">
+              <HugeiconsIcon
+                icon={ThreeDRotateIcon}
+                size={22}
+                color="currentColor"
+                strokeWidth={1.5}
+              />
+            </div>
+          </div>
         </div>
       </header>
 
