@@ -1,0 +1,8 @@
+services:
+  - type: web
+    name: premier-league-scores
+    env: python
+    buildCommand: "cd frontend && npm install && npm run build && cd ../backend && pip install -r requirements.txt"
+    startCommand: "cd backend && uvicorn app.main:app --host 0.0.0.0 --port $PORT"
+    plan: free
+    autoDeploy: true
