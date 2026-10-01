@@ -146,8 +146,15 @@ export default function App() {
       <header className="app-header">
         <div className="header-inner">
           <div className="brand-group">
-            <div className="brand-icon" title="COYG! ⚽">
-              <span className="brand-ball" role="img" aria-label="Soccer ball">⚽</span>
+            <div className="brand-icon" title="Premier League Scores">
+              <span className="brand-ball">
+                <HugeiconsIcon
+                  icon={ThreeDRotateIcon}
+                  size={26}
+                  color="currentColor"
+                  strokeWidth={1.75}
+                />
+              </span>
             </div>
             <div>
               <h1 className="brand-title">Premier League Scores</h1>
@@ -155,34 +162,23 @@ export default function App() {
             </div>
           </div>
 
-          {/* View Switcher Tabs & Actions */}
-          <div className="header-actions">
-            <nav className="view-nav" aria-label="Views">
-              <button
-                type="button"
-                className={`nav-tab ${currentView === 'matches' ? 'active' : ''}`}
-                onClick={() => setCurrentView('matches')}
-              >
-                Fixtures & Scores
-              </button>
-              <button
-                type="button"
-                className={`nav-tab ${currentView === 'table' ? 'active' : ''}`}
-                onClick={() => setCurrentView('table')}
-              >
-                Standings
-              </button>
-            </nav>
-
-            <div className="nav-icon-badge" title="3D Motion Active">
-              <HugeiconsIcon
-                icon={ThreeDRotateIcon}
-                size={22}
-                color="currentColor"
-                strokeWidth={1.5}
-              />
-            </div>
-          </div>
+          {/* View Switcher Tabs */}
+          <nav className="view-nav" aria-label="Views">
+            <button
+              type="button"
+              className={`nav-tab ${currentView === 'matches' ? 'active' : ''}`}
+              onClick={() => setCurrentView('matches')}
+            >
+              Fixtures & Scores
+            </button>
+            <button
+              type="button"
+              className={`nav-tab ${currentView === 'table' ? 'active' : ''}`}
+              onClick={() => setCurrentView('table')}
+            >
+              Standings
+            </button>
+          </nav>
         </div>
       </header>
 
