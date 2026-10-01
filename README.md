@@ -46,9 +46,10 @@ You can run this application live on the web forever at zero cost:
 
 ### Option 1: One-Click Render Deployment (Recommended)
 
-1. Push this repository to your GitHub account.
-2. Go to [Render.com](https://render.com) and click **New + > Blueprint** (or **Web Service**).
-3. Connect your repository. Render automatically reads [render.yaml](render.yaml):
+[![Deploy to Render](https://render.com/images/deploy-to-render-button.svg)](https://render.com/deploy?repo=https://github.com/Shahmeerrrrrr/premier-league-scores)
+
+1. Click the **Deploy to Render** button above (or import on [Render.com](https://render.com)).
+2. Render automatically reads [render.yaml](render.yaml):
    - **Build Command:** `cd frontend && npm install && npm run build && cd ../backend && pip install -r requirements.txt`
    - **Start Command:** `cd backend && uvicorn app.main:app --host 0.0.0.0 --port $PORT`
 4. Click **Deploy**. Your app will be live with a permanent HTTPS URL (e.g., `https://premier-league-scores.onrender.com`).
