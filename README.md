@@ -215,4 +215,4 @@ The repository includes Infrastructure-as-Code definitions:
 
 ## Author & Attribution
 - **Data Source:** [OpenLigaDB](https://www.openligadb.de) Community API.
-- **Developer:** Muhammad Shahmeer.
+- **Developer:** Shahmeer.
