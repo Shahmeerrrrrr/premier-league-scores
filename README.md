@@ -7,6 +7,12 @@ A full-stack, production-ready English Premier League tracking application engin
 
 ---
 
+## Application Demo
+
+![Premier League Scores Interface Demo](docs/demo.webp)
+
+---
+
 ## Architecture Overview
 
 The system adopts a Backend-for-Frontend (BFF) architectural pattern. The client never communicates directly with upstream third-party services. Instead, the FastAPI service acts as an abstraction, caching, and normalization boundary.
